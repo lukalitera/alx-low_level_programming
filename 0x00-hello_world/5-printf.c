@@ -1,11 +1,8 @@
 #!/bin/bash
 #include <stdio.h>
 /**
- * main - print the string in the out function
- *
- * Description: using the main function
- * this program prints "programming is like a multilingual puzzle
- * Return: 0
+ * Description: main - prints out the string to stdout.
+ * Return: 0 if success
  */
 int main(void)
 {
