@@ -1,10 +1,11 @@
 #include <stdio.h>
 
 /**
- * main - entry point
+ * main - main block
  *
- * Return: 0 after printing the function
+ * Return: 0
  */
+
 int main(void)
 {
 	puts("\"programming is like building a multilingual puzzle");
