@@ -1,4 +1,5 @@
-#includ <stdio.h>
+#include <stdio.h>
+
 /**
  * main - Entry point
  *
@@ -7,15 +8,12 @@
 int main(void)
 
 {
-	char alphabet;
+	char i;
 
-	for (alphabet = 122; alphabet >= 97; alphabet--)
-
+	for (i = 'z'; i >= 'a'; i--)
 	{
-		putchar(alphabet);
+		putchar(i);
 	}
 	putchar('\n');
-
 	return (0);
-
 }
