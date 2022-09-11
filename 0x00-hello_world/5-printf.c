@@ -1,11 +1,12 @@
 #!/bin/bash
 #include <stdio.h>
 /**
- * Description: main - prints out the string to stdout.
- * Return: 0 if success
+ * Description: main block
+ * Return: 0 (success)
  */
 int main(void)
 {
+
 	printf("with proper grammar, but the outcome is a piece of art,\n");
 	return (0);
 }
