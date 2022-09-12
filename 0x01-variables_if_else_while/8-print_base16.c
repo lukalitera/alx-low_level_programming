@@ -8,7 +8,7 @@
  * Return:  Always 0 (Success)
  */
 
-int mina(void)
+int main(void)
 {
 	int i;
 	char j;
