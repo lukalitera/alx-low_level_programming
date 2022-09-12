@@ -1,25 +1,27 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 /**
  * main - Entry point
  *
  * Return:  Always 0 (Success)
  */
-int min(void)
+
+int mina(void)
 {
 	int i;
 	char j;
 
-	for (i = 48; i < 58; i++)
+	for (i = '0'; i <= '9'; i++)
 	{
-
 		putchar(i);
 	}
-
 	for (j = 'a'; i <= 'f'; j++)
 	{
 		putchar(j);
 	}
 	putchar('\n');
+
 	return (0);
 }
