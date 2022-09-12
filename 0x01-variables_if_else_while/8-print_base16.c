@@ -10,16 +10,16 @@
 
 int main(void)
 {
-	int i;
-	char j;
+	int d;
+	char low;
 
-	for (i = '0'; i <= '9'; i++)
+	for (d = '0'; d <= '9'; d++)
 	{
-		putchar(i);
+		putchar(d);
 	}
-	for (j = 'a'; i <= 'f'; j++)
+	for (low = 'a'; low <= 'f'; low++)
 	{
-		putchar(j);
+		putchar(low);
 	}
 	putchar('\n');
 
