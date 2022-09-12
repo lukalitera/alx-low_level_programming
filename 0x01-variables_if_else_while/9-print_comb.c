@@ -5,17 +5,17 @@
 /**
  * main - Entry point
  *
- * Return: 0 (Success)
+ * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	int j;
+	int d;
 
-	for (j = '0'; j <= '9'; j++)
+	for (d = '0'; d <= '9'; d++)
 	{
-		putchar(j);
-		if (j != '9')
+		putchar(d);
+		if (d != '9')
 		{
 			putchar(',');
 			putchar(' ')
@@ -24,5 +24,4 @@ int main(void)
 	putchar('\n');
 	
 	return (0);
-
 }
