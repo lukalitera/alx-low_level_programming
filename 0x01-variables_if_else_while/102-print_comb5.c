@@ -3,30 +3,33 @@
 #include <time.h>
 
 /**
- * main - Entry point
+ * main - print possible combination of two 2-digit numbers
  *
- * Return: Always 0
+ * Return: return 0 at the end
  */
 
 int main(void)
 {
-
 	int i, j;
 
-	for (i = 0; i < 98; i++)
+	for (i = 0; i < 100; i++)
 	{
-		for (j = p + 1; i <= 99; j++)
+		for (j = 0; j < 100; j++)
 		{
-			putchar((i / 10) + '0');
-			putchar((i % 10) + '0');
-			putchar(' ');
-			putchar((j / 10) + '0');
-			putchar((j % 10) + '0');
-			
-			if (i == 98 && j == 99)
-				continue;
-			putchar(',');
-			putchar(' ')
+			if (j > i)
+			{
+				putchar((i / 10) + '0');
+				putchar((i % 10) + '0');
+				putchar(' ');
+				putchar(j / 10) + '0');
+				putchar(j % 10) + '0');
+				if (i != 98)
+
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
 		}
 	}
 	putchar('\n');
