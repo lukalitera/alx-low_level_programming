@@ -3,16 +3,16 @@
 #include <time.h>
 
 /**
- * main - Entry point
+ * main - print possible combo of 3
  *
- * Return: Always Success
+ * Return: Always 0 (Success)
  */
 
 int main(void)
 {
 	int i, j, k;
 	
-	for (i = 0; i <= 8; i++)
+	for (i = 0; i <= 9; i++)
 
 	{
 
