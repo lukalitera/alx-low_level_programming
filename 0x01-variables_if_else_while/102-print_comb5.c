@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <stdlid.h>
-#include <time.h>
 
 /**
  * main - print possible combination of two 2-digit numbers
