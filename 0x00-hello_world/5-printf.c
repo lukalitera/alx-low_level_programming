@@ -1,9 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - print the string in the put function
- *
- * Description: using the main function
+ * main - print out a string to stdout
  * Return: 0 if success
  */
 
