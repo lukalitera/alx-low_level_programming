@@ -1,38 +1,42 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 /**
- * main - print tripple combos
+ * main - Entry point
  *
- * Description: print tripple digit combos
- *
- * Return: Always 0 (Success)
+ * Return: Always Success
  */
 
 int main(void)
 {
 	int i, j, k;
 	
-	i = 48;
-       	j = 48;
-	k = 48;
-	while (i < 58)
+	for (i = 0; i <= 8; i++)
+
 	{
-		j = i + 1;
-		while (j < 58)
+
+		for (j = i +1; j <= 9; j++)
+			
+		{
+			for (k = j + 1; k < 10; k++)
 			{
-				putchar(i);
-				putchar(j);
-				putchar(k);
-				if (i < 55 || j < 56 || k < 57)
-				{
-					putchar(44);
-					putchar(32)
-						k++;
-				}
-				j++
+				putchar((num1 % 10) + '0');
+				putchar((num1 % 10) + '0');
+				putchar((num1 % 10) + '0');
+
+				if (i == 7 && j == 8 && k == 9)
+
+					continue;
+				
+				putchar(',');
+				putchar(' ');
+
 			}
-		i++;
+		}
+
 	}
-		putchar(10);
-		return (0);
+
+	return (0);
 }
+
