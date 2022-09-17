@@ -10,29 +10,26 @@
 
 int main(void)
 {
+	int i,j;
 
-	int digit1; digit2;
-
-	for (digit1 = 0; digit1 <= 9; digit1++)
+	for (i = 0; i <= 9; i++)
 	{
-		for (digit2 = 1; digit2 <= 9; digit2++)
-
+		for (j = 1; j <= 9; j++)
 		{
-			if (digit2 > digit1)
-
+			if (j > i)
 			{
-				putchar(digit1 + '0');
-				putchar(digit2 + '0');
+				putchar(i + '0');
+				putchar(j + '0');
 
-				if (i !=8)
-
+				if(i !=8)
 				{
 					putchar(',');
-					putchar(' ')
+					putchar(' ');
 				}
 			}
 		}
 	}
 	putchar('\n');
 	return (0);
+
 }
