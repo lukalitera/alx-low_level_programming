@@ -3,9 +3,9 @@
 #include <time.h>
 
 /**
- * main - entry point
+ * main - print single digit numbers starting from 0
  *
- * Return: Always Success
+ * Return: return 0 at the end
  */
 
 int main(void)
@@ -13,25 +13,26 @@ int main(void)
 
 	int digit1; digit2;
 
-	for (digit1 = 0; digit1 < 9; digit1++)
+	for (digit1 = 0; digit1 <= 9; digit1++)
 	{
-		for (digit2 = digir1 + 1; digit2 < 10; digit2++)
+		for (digit2 = 1; digit2 <= 9; digit2++)
 
 		{
-			putchar((digit1 % 10) + '0');
-			putchar((digit2 % 10) + '0');
-			
-			if (digit1 == 8 && digit2 == 9)
+			if (digit2 > digit1)
 
-				continue;
-			
-			putchar(',');
-			putchar(' ');
+			{
+				putchar(digit1 + '0');
+				putchar(digit2 + '0');
+
+				if (i !=8)
+
+				{
+					putchar(',');
+					putchar(' ')
+				}
+			}
 		}
-
 	}
-	
 	putchar('\n');
-	
 	return (0);
 }
