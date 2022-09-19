@@ -1,19 +1,17 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * swap_int - swaps the values of the integers using two input parameters
  *
- * @a: Input parameter 1
- * @b: Input parameter 2
- *
- * Return: Always 0.
+ * @a: parameter1
+ * @b: parameter2
  */
-void swap_lst(int *a, int *b)
-{
-	int temp;
 
-	temp = *a;
+void swap_int(int *a, int *b)
+{
+	int tmp;
+
+	tmp = *a;
 	*a = *b;
-	*b = temp;
+	*b = tmp;
 }
