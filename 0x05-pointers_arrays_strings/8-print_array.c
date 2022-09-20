@@ -1,8 +1,8 @@
-#include "main.h"
 #include <stdio.h>
+#include "main.h"
 
 /**
- * print arry - prints n elements of an array
+ * print array - prints n elements of an array
  * @a: array
  * @n: number of elements
  * Return: void
