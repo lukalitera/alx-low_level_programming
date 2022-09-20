@@ -3,7 +3,7 @@
 /**
  * print_rev - prints a string, in reverse
  * @s: A pointer to an int that will be changed
- * 
+ *
  * Return: void
  */
 
