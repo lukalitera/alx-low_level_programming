@@ -2,10 +2,9 @@
 #include <stdio.h>
 
 /**
- * print arry - prints n elements of an array of integers
- * @a: pointer to array of integers
- * @n: number of elements of array to be printed
- *
+ * print arry - prints n elements of an array
+ * @a: array
+ * @n: number of elements
  * Return: void
  */
 
