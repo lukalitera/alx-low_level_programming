@@ -4,12 +4,9 @@
 /**
  * _abs - computes the absolute value of an integer
  * @n: parameter
- * Return: absolute value of n integer
+ * Return: Always success
  */
-
-int _abs(int ab)
+int _abs(int i)
 {
-	if (n < 0)
-		n = -n;
-	return (n);
+	return (i * ((i > 0) - (i < 0)));
 }
