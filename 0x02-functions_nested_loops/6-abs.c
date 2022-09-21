@@ -3,11 +3,13 @@
 
 /**
  * _abs - computes the absolute value of an integer
- * @n: The input letter
- * Return: Always success
+ * @n: parameter
+ * Return: absolute value of n integer
  */
 
 int _abs(int ab)
 {
-	return (ab * ((ab > 0) - (ab < 0 )));
+	if (n < 0)
+		n = -n;
+	return (n);
 }
