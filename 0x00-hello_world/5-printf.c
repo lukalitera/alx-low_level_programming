@@ -1,9 +1,8 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
+ * Description: main - prints out a string to stdout.
+ * Return: 0 if success
  */
 
 int main(void)
