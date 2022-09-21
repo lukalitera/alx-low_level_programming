@@ -3,17 +3,11 @@
 
 /**
  * _abs - computes the absolute value of an integer
- * @n: The int to be operated upon
- * Return: returns an unsinged int value to calling function
+ * @n: The input letter
+ * Return: Always success
  */
 
-int _abs(int)
+int _abs(int ab)
 {
-	if (n > 0)
-		return (n);
-	else
-	{
-		n *= -1;
-		return (n);
-	}
+	return (ab * ((ab > 0) - (ab <0)));
 }
