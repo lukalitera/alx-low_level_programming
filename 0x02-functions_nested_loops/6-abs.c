@@ -6,7 +6,7 @@
  * @n: parameter
  * Return: Always success
  */
-int _abs(int)
+int _abs(int n)
 {
-	return (i * ((i > 0) - (i < 0)));
+	return (n * ((n > 0) - (n < 0)));
 }
