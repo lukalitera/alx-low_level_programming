@@ -3,31 +3,27 @@
 /**
  * _strstr - locates a substring
  * @haystack: string to search
- * @needle: substring to search for
- *
- * Return: pointer to byte at start of substrin
+ * @needle: searched in haystack
+ * Return: return 0
  */
 
-char *_strstr(char *haystack, char *needle);
+char *_strstr(char *haystack, char *needle)
 {
-	char *hayptr, *ndlptr;
+	char *str1, *str2;
 
-	while (*haystack != 0)
+	while (*haystack != '\0')
 	{
-		hayptr = haystack;
-		ndlptr = needle;
-		if (*ndlptr == 0)
-			return (haystack);
-		while (*hayptr != 0)
+		str1 = haystack;
+		str2 = needle;
+
+		while (*haystack != '\0' && *str2 != '\0' && *haystack == *str2)
 		{
-			if (*hayptr != *ndlptr)
-				break;
-			hayptr++;
-			ndlptr++;
-			if (*ndlptr == 0)
-				return (haystack);
+			haystack++;
+			str2++;
 		}
-		haystack++;
+		if (*str2 == '\0')
+			return (str1);
+		haystack = str1 + 1;
 	}
 	return (0);
 }
