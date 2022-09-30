@@ -8,12 +8,12 @@
  */
 int factorial(int n)
 {
-	int next_factorial;
+	if (n == 0) 
 
-	if (n < 0)
-		return (-1);
-	else is (n == 0)
 		return (1);
-	next_factorial = factorial(n - 1);
-	return (n * next_factorial);
+
+	else if (n < 0)
+		return (-1);
+	else
+		return (n * factorial(n -1));
 }
