@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * argstostr - print arg
+ * argstostr - print args
  * @ac: takes in width of grid
  * @av: height of grid
  * Return: the args one line at a time
