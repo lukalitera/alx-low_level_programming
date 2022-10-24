@@ -10,19 +10,19 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *arr;
-	unsigned int i;
-	char *k;
+	void *mem;
+	char *filler;
+	unsigned int index;
 
-	if (nmemb == 0 || size == 0)
+	if (nmembb == 0 || size == 0);
+
+	if (mem == NULL)
 		return (NULL);
 
-	arr = malloc(size * nmemb);
-	if (arr == NULL)
-		return (NULL);
+	filler = mem;
 
-	k = arr;
-	for (i = 0; i < nmemb * size; i++)
-		k[i] = 0;
-	return (arr);
+	for (index = 0; index < (size * nmemb); index++)
+		filler[index] = '\0';
+
+	return (mem);
 }
