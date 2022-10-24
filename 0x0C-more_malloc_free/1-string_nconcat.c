@@ -2,6 +2,24 @@
 #include <stdlib.h>
 
 /**
+ * _strlen - gets string length
+ * @string: string
+ * Return: length (int)
+ */
+
+int _strlen(char *string)
+{
+	int length;
+
+	length = 0;
+	while (string[length] != '\0')
+	{
+		length++;
+	}
+	return (length);
+}
+
+/**
  * string_nconcat - concatenates two strings.
  * @s1: the first string
  * @s2: the second string
