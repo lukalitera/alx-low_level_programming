@@ -5,23 +5,27 @@
  * array_range - creates an array of integers
  * @min: minimum integer
  * @max: maximum integer
- * Return: pointer to allocated memory
+ * Return: integer value
  */
 
 int *array_range(int min, int max)
 {
-	int *arr, index, size;
+	int *a, i = 0;
 
 	if (min > max)
 		return (NULL);
 
-	size = max - min + 1;
-	array = malloc(sizeof(int) * size);
+	a = malloc((sizeof(int) * (max - min)) + sizeof(int));
 
-	if (array == NULL)
+	if (a == NULL)
 		return (NULL);
 
-	for (index = 0; index < size; index++)
-		array[index] = min++;
-	return (array);
-}			
+	while (min <= max)
+	{
+		a[i] = min;
+		i++;
+		min++;
+	}
+
+	return (a);
+}
