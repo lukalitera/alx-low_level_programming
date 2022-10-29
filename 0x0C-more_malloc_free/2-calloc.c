@@ -10,24 +10,22 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *arr;
-	unsigned int i;
-	char *p;
+	void *mem;
+	char *filler;
+	unsigned int index;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
-	l = nmemb * size;
-	p = malloc(l);
+	mem = malloc(size * nmemb);
 
-	if (p == NULL)
+	if (mem == NULL)
 		return (NULL);
 
-	while (i < l)
-	{
-		p[i] = 0;
-		i++;
-	}
+	filler = mem;
 
-	return (p);
+	for (index = 0; index < (size * nmemb); index++)
+		filler[index] = '\0';
+
+	return (mem);
 }

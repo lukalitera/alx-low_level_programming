@@ -4,16 +4,25 @@
 /**
  * _realloc - reallocates memory block using malloc and free
  * @ptr: pointer
- * @old_size: byte size to be allocated
- * @new_size: new size in bytes
- * Return: void
+ * @old_size: size, in bytes, of the allocated space of ptr.
+ * @new_size: new size, in bytes, of the new memory block.
+ *
+ * Return: ptr.
+ * if new_size == old_size, returns ptr without changes.
+ * if malloc fails, returns NULL.
  */
-
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
+	unsigned int i, j;
+	char *newPtr;
+
+	if (old_size == new_size)
+		return (ptr);
 	if (ptr == NULL)
 	{
 		ptr = malloc(new_size);
+		if (ptr == NULL)
+			return (NULL);
 		return (ptr);
 	}
 
@@ -22,12 +31,26 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 		free(ptr);
 		return (NULL);
 	}
+	newPtr = malloc(new_size * sizeof(char));
+	if (newPtr == NULL)
+		return (NULL);
 
-	if (new_size == old_size)
-		return (ptr);
-	free(ptr);
-
-	ptr = malloc(new_size);
-
-	return (ptr);
+	if (new_size > old_size)
+	{
+		for (i = 0; i < old_size; i++)
+		{
+			newPtr[i] = ((char *)ptr)[i];
+		}
+		free(ptr);
+		return (newPtr);
+	}
+	else
+	{
+		for (j = 0; j < new_size; j++)
+		{
+			newPtr[j] = ((char *)ptr)[j];
+		}
+		free(ptr);
+		return (newPtr);
+	}
 }
